@@ -43,7 +43,7 @@ sub SOAP::Transport::HTTP::Client::get_basic_credentials {
 
 ## SOAP specify the endpoint to connect
 my $soap = SOAP::Lite
-    -> proxy("https://$instance/cmdb_ci_server.do?SOAP");
+    ->proxy("https://$instance/cmdb_ci_server.do?SOAP");
 
 ## Get total number of records first
 ##   Since ServiceNow's web services will only return a
