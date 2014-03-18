@@ -10,16 +10,16 @@ ServiceNow's web service will only return a maximum of 250 results.  The snQuery
 total number of keys (records) in the CMDB and then divide the total into batches.
 
 Requirements (Perl Modules)
-  -SOAP::Lite
-  -Term::ReadKey
+  SOAP::Lite
+  Term::ReadKey
   
 Configuration (config.txt)
 
 Edit to include your ServiceNow instance
-  -instance:<your_instance_name>
+  instance:<your_instance_name>
 
 Edit to include your ServiceNow user ID
-  -sn_user:<your_username>
+  sn_user:<your_username>
 
 Running (snQuery.pl)
 The script is designed to be run manually and will prompt for a password.  The output can be modified to print
