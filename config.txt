@@ -1,0 +1,7 @@
+# ServiceNow Instance
+# -------------------
+instance:demosandbox.service-now.com
+
+# ServiceNow User
+# ---------------
+sn_user:itil
