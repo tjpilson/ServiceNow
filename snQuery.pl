@@ -1,12 +1,12 @@
 #!/usr/bin/perl
 
-# --------------------------------
+# -------------------------------------------
 # snQuery.pl
 # Tim Pilson
 # 3/18/2014
 # 
-# Manually query a ServiceNow CMDB
-# --------------------------------
+# Manually query servers from ServiceNow CMDB
+# -------------------------------------------
 
 use strict;
 use SOAP::Lite;
@@ -56,7 +56,7 @@ my $method = SOAP::Data->name('getKeys')
 ## Query parameter
 push(my @params, SOAP::Data->name("operational_status" => "1") );
 
-## Get results, divide in array
+## Get results, divide into array
 my $result     = $soap->call($method => @params)->result;
 my @serverKeys = split(",", $result);
 my $totalCount = @serverKeys;
