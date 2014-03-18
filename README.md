@@ -28,4 +28,4 @@ sn_user:<your_username>
 
 The script is designed to be run manually and will prompt for a password.  The output can be modified to print
 in any necessary format.  If additional parameters are needed, access your ServiceNow CMDB instance 
-WSDL or the demo ServiceNow instance at: [http://demosandbox.service-now.com/cmdb_ci_server.do?WSDL](http://demosandbox.service-now.com/cmdb_ci_server.do?WSDL)
+WSDL or the demo ServiceNow instance at: [http://demosandbox.service-now.com/cmdb_ci_server.do?WSDL](http://demosandbox.service-now.com/cmdb_ci_server.do?WSDL)  Look for the _getRecords_ result set for available parameters.
