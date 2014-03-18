@@ -3,7 +3,7 @@ ServiceNow
 
 ServiceNow Integration
 
-Perl is a tool that is commonly available by system admins.  Since ServiceNow is a hosted service and there are
+Perl is a tool that is commonly available to system admins.  Since ServiceNow is a hosted service and there are
 many uses for extracting server CMDB data, these scripts enable web service queries to the platform.
 
 ServiceNow's web service will only return a maximum of 250 results.  The snQuery.pl script will extract the
