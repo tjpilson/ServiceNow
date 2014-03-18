@@ -13,7 +13,7 @@ use SOAP::Lite;
 use Term::ReadKey;
 
 ## Required config file
-my ($instance,$sn_user,$db_user);
+my ($instance,$sn_user);
 open(my $config, "<", "config.txt") || die "ERROR: can't open config file\n";
 while (<$config>) {
   chomp;
