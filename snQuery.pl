@@ -13,7 +13,7 @@ use SOAP::Lite;
 use Term::ReadKey;
 
 ## Required config file
-my ($instance,$sn_user);
+my($instance,$sn_user);
 open(my $config, "<", "config.txt") || die "ERROR: can't open config file\n";
 while (<$config>) {
   chomp;
@@ -21,6 +21,12 @@ while (<$config>) {
   my($key,$value) = split(/:/);
   if ( $key eq "instance" ) { $instance = $value }
   if ( $key eq "sn_user" )  { $sn_user  = $value }
+}
+
+## Check config parameters
+if (( $sn_user eq "" ) || ( $instance eq "" )) {
+  print "ERROR: missing config parameters\n";
+  exit 1;
 }
 
 ## Get Credentials for Authentication
@@ -51,7 +57,7 @@ my $method = SOAP::Data->name('getKeys')
 push(my @params, SOAP::Data->name("operational_status" => "1") );
 
 ## Get results, divide in array
-my $result = $soap->call($method => @params)->result;
+my $result     = $soap->call($method => @params)->result;
 my @serverKeys = split(",", $result);
 my $totalCount = @serverKeys;
 
