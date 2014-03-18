@@ -16,10 +16,10 @@ Requirements (Perl Modules)
 Configuration (config.txt)
 
 Edit to include your ServiceNow instance
-  instance:<your_instance_name>
+  -instance:<your_instance_name>
 
 Edit to include your ServiceNow user ID
-  sn_user:<your_username>
+  -sn_user:<your_username>
 
 Running (snQuery.pl)
 The script is designed to be run manually and will prompt for a password.  The output can be modified to print
